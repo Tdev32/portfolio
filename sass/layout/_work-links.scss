@@ -1,0 +1,48 @@
+.work-links {
+  margin-top: 8rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: clamp(.6rem, 1rem, 1.6rem);
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+
+    @include respond(tab) {
+      width: 90%;
+    }
+
+    @include respond(tab-port) {
+      width: 74%;
+      row-gap: clamp(.6rem, 1rem, 1.6rem);
+    }
+
+    @include respond(phone-land) {
+      width: 82%;
+    }
+
+    @include respond(phone) {
+      width: 60%;
+    }
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
+}
+
+.site-1, .site-2, .site-3, .site-4 {
+  height: 250px;
+  width: 200px;
+  background-color: lightgray;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}

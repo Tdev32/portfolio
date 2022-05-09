@@ -1,0 +1,25 @@
+header {
+  width: 100%;
+  height: 4rem;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+}
+
+.logo, a {
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+}

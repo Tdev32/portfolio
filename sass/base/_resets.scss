@@ -1,0 +1,30 @@
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  font-family: Poppins;
+  border-left: 3px solid lime;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

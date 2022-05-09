@@ -1,0 +1,74 @@
+.hero-section {
+  margin-top: 4rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-land) {
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  .banner {
+    margin-left: 2rem;
+
+    @include respond(phone) {
+      margin-top: 2rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.profile-img {
+  width: 20%;
+
+  @include respond(tab-port) {
+    width: 30%;
+  }
+
+  @include respond(phone) {
+    width: 40%;
+  }
+
+  img {
+    border-radius: 100px;
+  }
+}
+
+h1 {
+  margin: 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.sub-heading {
+  text-align: center;
+  color: lightgray;
+  font-size: .8rem;
+}
+
+.f_Name, .l_Name {
+  font-weight: 100;
+  font-size: 4rem;
+  letter-spacing: 10px;
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
+
+  @include respond(phone-sm) {
+    font-size: 4rem;
+  }
+}
+
+.f_Name {
+  color: lightgray;
+}
+
+.l_Name {
+  color: lime;
+}
