@@ -124,6 +124,12 @@ h1 {
   }
 }
 
+@media (max-width: 31.25em) {
+  .f_Name, .l_Name {
+    font-size: 3rem;
+  }
+}
+
 .f_Name {
   color: lightgray;
 }

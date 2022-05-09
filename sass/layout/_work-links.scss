@@ -24,11 +24,11 @@
       width: 82%;
     }
 
-    @include respond(phone) {
+    @include respond(phone-xl) {
       width: 60%;
     }
 
-    @include respond(phone) {
+    @include respond(phone-xl) {
       justify-content: center;
     }
   }

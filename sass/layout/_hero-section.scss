@@ -9,7 +9,7 @@
       justify-content: center;
     }
 
-    @include respond(phone) {
+    @include respond(phone-xl) {
       flex-direction: column;
     }
   }
@@ -17,7 +17,7 @@
   .banner {
     margin-left: 2rem;
 
-    @include respond(phone) {
+    @include respond(phone-xl) {
       margin-top: 2rem;
       margin-left: 0;
     }
@@ -31,7 +31,7 @@
     width: 30%;
   }
 
-  @include respond(phone) {
+  @include respond(phone-xl) {
     width: 40%;
   }
 
@@ -56,12 +56,16 @@ h1 {
   font-size: 4rem;
   letter-spacing: 10px;
 
-  @include respond(phone) {
+  @include respond(phone-xl) {
     font-size: 5rem;
   }
 
-  @include respond(phone-sm) {
+  @include respond(phone-md) {
     font-size: 4rem;
+  }
+
+  @include respond(phone-sm) {
+    font-size: 3rem;
   }
 }
 
