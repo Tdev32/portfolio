@@ -4,10 +4,7 @@
   .container {
     display: flex;
     align-items: center;
-
-    @include respond(tab-land) {
-      justify-content: center;
-    }
+    justify-content: center;
 
     @include respond(phone-xl) {
       flex-direction: column;
