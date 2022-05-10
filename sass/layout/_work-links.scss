@@ -9,25 +9,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 2rem;
-    row-gap: 2rem;
-
-    // @include respond(tab) {
-    //   width: 90%;
-    // }
-
-    // @include respond(tab-port) {
-    //   width: 74%;
-    //   row-gap: clamp(.6rem, 1rem, 1.6rem);
-    // }
-
-    // @include respond(phone-land) {
-    //   width: 82%;
-    // }
-
-    // @include respond(phone-xl) {
-    //   justify-content: center;
-    // }
+    -webkit-gap: 2rem;
+    gap: 2rem;
   }
 }
 
