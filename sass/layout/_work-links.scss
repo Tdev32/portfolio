@@ -61,13 +61,22 @@
 
   .summary {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 10px;
     padding: 10px;
-    text-align: center;
+
+    @include respond(phone-sm) { // 500px
+      padding: 0 10px 0 10px;
+    }
   }
 }
 
 .title {
+  margin: 12px 0 0 0;
+  font-size: 12px;
   color: white;
-  text-align: center;
+  padding: 10px;
+
+  @include respond(phone-sm) { // 500px
+    margin: 0;
+  }
 }
