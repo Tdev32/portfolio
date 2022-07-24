@@ -1,6 +1,7 @@
 header {
   width: 100%;
   height: 4rem;
+  background-color: black;
 }
 
 header .container {
@@ -36,6 +37,13 @@ a {
 
 .hero-section {
   margin-top: 4rem;
+  position: relative;
+}
+
+@media (max-width: 31.25em) {
+  .hero-section {
+    margin-top: 2rem;
+  }
 }
 
 .hero-section .container {
@@ -134,7 +142,9 @@ h1 {
 }
 
 .work-links {
-  margin-top: 8rem;
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+  margin: 0 auto;
 }
 
 @media (max-width: 36.25em) {
@@ -143,53 +153,84 @@ h1 {
   }
 }
 
+@media (max-width: 31.25em) {
+  .work-links {
+    margin-top: -5rem;
+  }
+}
+
 .work-links .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-gap: 2rem;
-  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
 }
 
-.site-1, .site-2, .site-3, .site-4 {
+.site {
   height: 15.625rem;
   width: 12.5rem;
-  background-color: lightgray;
+  background-color: #303030;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
+  -webkit-box-shadow: -5px 5px 30px black;
+          box-shadow: -5px 5px 30px black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.site-1 img, .site-2 img, .site-3 img, .site-4 img {
+.site:hover {
+  -webkit-transform: translateY(-8%);
+          transform: translateY(-8%);
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.site img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-@media (max-width: 75em) {
-  .site-1, .site-2, .site-3, .site-4 {
-    height: 13.125rem;
-    width: 10rem;
-  }
-}
-
 @media (max-width: 66.25em) {
-  .site-1, .site-2, .site-3, .site-4 {
+  .site {
     height: 11.75rem;
     width: 7.5rem;
   }
 }
 
+@media (max-width: 75em) {
+  .site {
+    height: 13.125rem;
+    width: 10rem;
+  }
+}
+
 @media (max-width: 48.3125em) {
-  .site-1, .site-2, .site-3, .site-4 {
+  .site {
     height: 9rem;
     width: 7.5rem;
   }
+}
+
+@media (max-width: 31.25em) {
+  .site {
+    height: 11rem;
+    width: 8.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.site .summary {
+  margin-top: 0;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
 }
 
 .title {
@@ -213,6 +254,14 @@ body {
   border-left: 3px solid lime;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 10000;
 }
 
 .flex {
