@@ -171,6 +171,12 @@ h1 {
   width: 90%;
 }
 
+@media (max-width: 31.25em) {
+  .work-links .container {
+    width: 79%;
+  }
+}
+
 .site {
   height: 15.625rem;
   width: 12.5rem;
