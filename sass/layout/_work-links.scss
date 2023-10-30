@@ -20,6 +20,9 @@
 
   .row {
     display: grid;
+    margin-inline: auto;
+    width: 70%;
+    grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
   }
 
