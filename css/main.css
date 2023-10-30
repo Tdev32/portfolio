@@ -9,6 +9,13 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+header .btn {
+  margin-inline: auto;
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid lime;
+}
 
 nav {
   display: flex;
