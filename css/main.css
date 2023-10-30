@@ -137,6 +137,9 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
 }
 .work-links .col {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 5px;
   margin-inline: auto;
 }
 
