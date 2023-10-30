@@ -144,6 +144,7 @@ h1 {
 }
 
 .site {
+  display: block;
   height: 15.625rem;
   width: 12.5rem;
   background-color: #303030;
