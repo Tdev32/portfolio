@@ -136,6 +136,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.work-links .col {
+  margin-inline: auto;
+}
 
 .site {
   height: 15.625rem;
