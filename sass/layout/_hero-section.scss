@@ -26,11 +26,13 @@
   }
 
   .btn {
+    padding: 8px 10px;
+    text-align: center;
     margin-inline: auto;
-    width: 200px;
-    height: 40px;
+    width: 140px;
     background-color: transparent;
     border: 2px solid lime;
+    border-radius: 40px;
   }
 }
 
