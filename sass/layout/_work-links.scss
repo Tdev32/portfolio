@@ -18,22 +18,27 @@
     }
   }
 
-  .row {
+  .row-4 {
     display: grid;
     margin-inline: auto;
-    width: 70%;
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .row-2 {
+    display: grid;
+    margin-inline: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .col {
     width: fit-content;
     padding-inline: 5px;
-    margin-inline: auto;
   }
 }
 
-.site {
+.card {
   display: block;
   height: 15.625rem; // 250px
   width: 12.5rem; // 200px
@@ -84,6 +89,31 @@
       padding: 0 10px 0 10px;
     }
   }
+}
+
+.card-wide {
+  width: 20rem;
+
+  div {
+    background-color: #303030;
+  }
+
+  .summary {
+    margin: 0;
+  }
+
+  .title {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 8px;
 }
 
 .title {
