@@ -1,6 +1,7 @@
 .hero-section {
   margin-top: 4rem;
-  position: relative;
+  position: absolute;
+  top: 50%;
 
   @include respond(phone-sm) {
     margin-top: 2rem;
